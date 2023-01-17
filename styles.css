@@ -5,7 +5,28 @@
     outline: 0;
     transition: all 0.5s ease;
 }
-
+header{
+    background-color: rgba(255, 255, 255, 0);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 0;
+    margin-bottom: 30px;
+    z-index: 1;
+    
+}
+h1{
+    font-family: monospace;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 1rem;
+}
 body {
     font-family: sans-serif;
 }
@@ -16,7 +37,7 @@ a {
 }
 
 body {
-    background-image: linear-gradient( to bottom right, rgba(79,51,176,1.0),rgba(210,53,165));
+    background-image: linear-gradient( to bottom right, rgb(179, 118, 26),rgb(161, 59, 132));
 }
 
 .container {
@@ -86,7 +107,7 @@ button {
     height: 60px;
     width: 60px;
     border: 0;
-    border-radius: 30px;
+    border-radius: 20px;
     margin: 5px;
     font-size: 20px;
     cursor: pointer;
@@ -104,7 +125,7 @@ button#equal {
 /* light theme */
 
 .calculator {
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
 }
 
 .calculator #display {
@@ -147,13 +168,13 @@ button#equal {
   }
 
   .calculator.dark button.btn-number {
-    background-color: #1b2f38;
+    background-color: #213e4b;
     color: #f8fafb;
   }
 
   .calculator.dark button.btn-operator {
     background-color: #2e1f39;
-    color: #aa00a4;
+    color: #b337ae;
   }
   
   .calculator.dark button.btn-equal {

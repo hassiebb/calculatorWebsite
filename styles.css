@@ -6,11 +6,11 @@
     transition: all 0.5s ease;
 	font-family: sans-serif;
 }
+
 body {
     font-family: sans-serif;
     background-image: linear-gradient( to bottom right, rgb(216, 140, 27),rgb(161, 59, 132) );
 }
-
 
 .app {
 	display: flex;
@@ -21,13 +21,12 @@ body {
 
 .calculator {
 	width: 100%;
-	max-width: 375px;
-	min-height: 640px;
+	max-width: 360px;
 	display: flex;
 	flex-direction: column;
 	border-radius: 1.5rem;
 	overflow: hidden;
-    box-shadow: 0 0 30px #000;
+  box-shadow: 0 0 30px #000;
 }
 
 .display {
@@ -210,7 +209,9 @@ body {
 /* Media queries */
 @media screen and (max-width: 400px) {
   body{
-    zoom: 0.9;
+    zoom: 0.7;
   }
-
+  .app{
+    height: 150vh;
+  }
 }

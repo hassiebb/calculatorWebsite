@@ -8,7 +8,7 @@
 }
 body {
     font-family: sans-serif;
-    background-image: linear-gradient( to bottom right, rgb(216, 140, 27),rgb(161, 59, 132));
+    background-image: linear-gradient( to bottom right, rgb(216, 140, 27),rgb(161, 59, 132) );
 }
 
 
@@ -207,3 +207,10 @@ body {
 	color: #f8fafb ;
 }
 
+/* Media queries */
+@media screen and (max-width: 400px) {
+  body{
+    zoom: 0.9;
+  }
+
+}

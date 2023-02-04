@@ -3,30 +3,32 @@
     margin: 0;
     box-sizing: border-box;
     outline: 0;
-    transition: all 0.5s ease;
+    transition: 0.5s ease;
 	font-family: sans-serif;
 }
 
 body {
-    font-family: sans-serif;
-    background-image: linear-gradient( to bottom right, rgb(216, 140, 27),rgb(161, 59, 132) );
+	background-image: linear-gradient( to bottom right, #d88c1b,#a13b84 );
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 .app {
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
 	align-items: center;
-	height: 100vh;
+	justify-content: center;
+	margin-top: 100px;
 }
 
 .calculator {
 	width: 100%;
-	max-width: 360px;
+	max-width: 370px;
 	display: flex;
 	flex-direction: column;
 	border-radius: 1.5rem;
 	overflow: hidden;
-  box-shadow: 0 0 30px #000;
+ 	box-shadow: 0 0 30px #000;
 }
 
 .display {
@@ -98,8 +100,6 @@ body {
 	font-size: 25px;
 	font-weight: 500;
 }
-
-
 
 .theme-toggler.active {
     color: rgb(255, 255, 255);
@@ -206,12 +206,96 @@ body {
 	color: #f8fafb ;
 }
 
+p{
+	margin-bottom: 10px;
+	font-size: 1.25rem;
+	font-weight: 700;
+}
+
+footer{
+	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+}
+
+
+.footer__social{
+	display: flex;
+	column-gap: 1rem;
+	justify-content: center;
+	align-items: center;
+}
+  
+.footer__social-link{
+	text-decoration: none;
+	display: inline-flex;
+	font-size: 1.25rem;
+	color: rgb(255, 255, 255);
+	font-size: 40px;
+}
+  
+.footer__social-link:hover{
+	transition: 0.1s ease;
+	color: #000000;
+}
+  
 /* Media queries */
-@media screen and (max-width: 450px) {
-  body{
-    zoom: 0.7;
-  }
-  .app{
-    height: 150vh;
-  }
+
+@media screen and (min-width: 320px) {
+
+	body{
+		zoom: 0.7;
+		margin-top: 10rem;
+	}
+
+	footer{
+		margin-top: 10rem;
+		zoom: 0.7;
+	}
+}
+
+
+@media screen and (min-width: 425px) {
+
+	.app{
+		zoom: 1.1;
+	}
+
+	footer{
+		margin-top: 10rem;
+	}
+}
+
+
+@media screen and (min-width: 768px) {
+
+	.app{
+		zoom: 1.2;
+	}
+}
+
+
+@media screen and (min-width: 1024px) {
+
+	footer{
+		zoom: 1;
+		margin-top: 5rem;
+	}
+
+}
+
+
+@media screen and (min-width: 1440px) {
+
+	footer{
+		zoom: 1.2;
+		margin-top: 8rem;
+	}
+	 
+	.app{
+		zoom: 1.3;
+	}
+
+
+
 }
